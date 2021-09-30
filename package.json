@@ -9,7 +9,30 @@
     "test": "react-scripts test",
     "lint": "eslint",
     "test:lint": "eslint **/*.{js,jsx,ts,tsx}",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "postversion" : "git push && git push --tags"
+  },
+  "files": ["lib/**/*"],
+  "keywords": [
+    "react",
+    "typescript",
+    "tailwind",
+    "tailwindcss",
+    "date",
+    "range",
+    "datepicker",
+    "rangepicker"
+  ],
+  "author": "Scramjet911",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Scramjet911/date-range-tailwind"
+  },
+  "bugs": {
+    "url": "https://github.com/Scramjet911/date-range-tailwind/issues"
   },
   "browserslist": {
     "production": [

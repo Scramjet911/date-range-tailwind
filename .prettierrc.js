@@ -6,5 +6,5 @@ module.exports = {
   'bracketSpacing': true,
   'jsxBracketSameLine': false,
   'arrowParens': 'always',
-  'trailingComma': 'es5'
+  'trailingComma': 'all'
 };
